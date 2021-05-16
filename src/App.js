@@ -1,22 +1,15 @@
 import { useState } from 'react'
 import { Layout, Menu, Input, Space } from 'antd';
 import './App.css';
-import { createUseStyles } from 'react-jss';
-import Grid from './components/Grid';
+import "antd/dist/antd.css";
+import ProductGrid from './components/ProductGrid';
+import database from './assets/database.json';
 
 const { Header, Footer, Content } = Layout;
 const { Search } = Input;
 
-//JSS
-const useStyles = createUseStyles({
-  container: {
-
-  },
-});
 
 function App() {
-  //JSS
-  const classes = useStyles();
 
   //menu tab state
   const [currentTab, setCurrentTab] = useState({ current: 'All' });
@@ -31,7 +24,7 @@ function App() {
     <div className="App">
       <Layout>
         <Header style={{ width: '100%' }}>
-          <Menu selectedKeys={currentTab} onClick={onTabClick} mode="horizontal" theme="dark" style={{ textAlign: 'center' }}>
+          <Menu selectedKeys={currentTab.current} onClick={onTabClick} mode="horizontal" theme="dark" style={{ textAlign: 'center' }}>
             <Menu.Item key='All' >All</Menu.Item>
             <Menu.Item key='Supreme'>Supreme</Menu.Item>
             <Menu.Item key='Sneaker'>Sneaker</Menu.Item>
@@ -41,14 +34,14 @@ function App() {
         <Content>
 
           <Space direction="horizontal">
-            <Search placeholder="Find a model" allowClear onSearch={onSearch} style={{ width: 300 }} />
-            <Search placeholder="Find a size" allowClear onSearch={onSearch} style={{ width: 150 }} />
+            <Search placeholder="Find a model" allowClear onSearch={onSearch} />
+            <Search placeholder="Find a size" allowClear onSearch={onSearch} />
           </Space>
 
-          <Grid></Grid>
+          <ProductGrid database={database}></ProductGrid>
 
         </Content>
-        <Footer>©2021, L'inconnue</Footer>
+        <Footer>L'inconnue © 2021</Footer>
       </Layout>
     </div>
   );

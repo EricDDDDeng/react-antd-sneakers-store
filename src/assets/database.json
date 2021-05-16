@@ -1,0 +1,54 @@
+{
+  "sneakers": [
+    {
+      "title": "Yeezy",
+      "description": "EU 43",
+      "url": "../images/Yeezy.png"
+    },
+    {
+      "title": "AirForce1",
+      "description": "EU 44",
+      "url": "../images/AirForce1.png"
+    },
+    {
+      "title": "PS5",
+      "description": "USA version",
+      "url": "../images/PS5.png"
+    },
+    {
+      "title": "AirJordan1",
+      "description": "EU 42.5",
+      "url": "../images/AirJordan1.png"
+    },
+    {
+      "title": "AirJordan4",
+      "description": "EU 42",
+      "url": "../images/AirJordan4.png"
+    },
+    {
+      "title": "AirMax97",
+      "description": "EU 43",
+      "url": "../images/AirMax97.png"
+    },
+    {
+      "title": "AJ1",
+      "description": "No Image",
+      "url": "../images/PlaceHolder.png"
+    },
+    {
+      "title": "AJ2",
+      "description": "No Image",
+      "url": "../images/PlaceHolder.png"
+    },
+    {
+      "title": "AJ3",
+      "description": "No Image",
+      "url": "../images/PlaceHolder.png"
+    },
+    {
+      "title": "AJ4",
+      "description": "No Image",
+      "url": "../images/PlaceHolder.png"
+    }
+  ]
+}
