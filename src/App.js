@@ -3,6 +3,7 @@ import { Layout, Menu, Input, Space, Row, Col } from 'antd';
 import './App.css';
 import "antd/dist/antd.css";
 import ProductGrid from './components/ProductGrid';
+import FAQ from './components/FAQ';
 import database from './assets/database.json';
 
 const { Header, Footer, Content } = Layout;
@@ -58,6 +59,8 @@ function App() {
           </Space>
 
           <ProductGrid database={database} currentTab={currentTab.current} searchKeyword={searchKeyword} searchType={searchType}></ProductGrid>
+
+          <FAQ></FAQ>
 
         </Content>
         <Footer>L'inconnue © 2021</Footer>
