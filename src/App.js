@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Layout, Menu, Input, Space } from 'antd';
+import { Layout, Menu, Input, Space, Row, Col } from 'antd';
 import './App.css';
 import "antd/dist/antd.css";
 import ProductGrid from './components/ProductGrid';
@@ -7,6 +7,9 @@ import database from './assets/database.json';
 
 const { Header, Footer, Content } = Layout;
 const { Search } = Input;
+
+const horizontalGap = { xs: 2, sm: 4, md: 8, lg: 8 };
+const vertialGap = { xs: 2, sm: 4, md: 8, lg: 8 }
 
 
 function App() {
@@ -17,11 +20,14 @@ function App() {
     setCurrentTab({ current: e.key });
   };
 
+  //search type
+  const [searchType, setSearchType] = useState("name");
+
   //search key
-  const [currentSearch, setCurrentSearch] = useState("");
-  const onSearch = value => {
-    setCurrentSearch(value);
-    console.log("current value is: " + value);
+  const [searchKeyword, setSearchKeyword] = useState("");
+  const onSearch = (value, event) => {
+    setSearchKeyword(value);
+    setSearchType(event.target.placeholder);
   };
 
   return (
@@ -38,11 +44,20 @@ function App() {
         <Content>
 
           <Space direction="horizontal">
-            <Search size="large" placeholder="Find a product" allowClear onSearch={onSearch} onInput={e => onSearch(e.target.value)} />
-            <Search size="large" placeholder="Find a size" allowClear onSearch={onSearch} onInput={e => onSearch(e.target.value)} />
+            <Row gutter={[horizontalGap, vertialGap]} >
+              <Col key="search_name" xs={24} sm={12} md={8} lg={8} >
+                <Search size="large" placeholder="Search by name" allowClear onSearch={onSearch} onInput={event => onSearch(event.target.value, event)} />
+              </Col>
+              <Col key="search_item_no" xs={24} sm={12} md={8} lg={8} >
+                <Search size="large" placeholder="Search by Item No." allowClear onSearch={onSearch} onInput={event => onSearch(event.target.value, event)} />
+              </Col>
+              <Col key="search_size" xs={24} sm={12} md={8} lg={8} >
+                <Search size="large" placeholder="Search by size" allowClear onSearch={onSearch} onInput={event => onSearch(event.target.value, event)} />
+              </Col>
+            </Row>
           </Space>
 
-          <ProductGrid database={database} selectedKeys={currentTab.current} currentSearch={currentSearch}></ProductGrid>
+          <ProductGrid database={database} currentTab={currentTab.current} searchKeyword={searchKeyword} searchType={searchType}></ProductGrid>
 
         </Content>
         <Footer>L'inconnue © 2021</Footer>

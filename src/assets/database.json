@@ -4,48 +4,56 @@
       "category": "Sneaker",
       "name": "Yeezy",
       "description": "EU 43",
+      "itemNo": "1",
       "url": "../images/Yeezy.png"
     },
     {
       "category": "Sneaker",
       "name": "AirForce1",
       "description": "EU 44",
+      "itemNo": "2",
       "url": "../images/AirForce1.png"
     },
     {
       "category": "Luxury",
       "name": "PS5",
       "description": "USA version",
+      "itemNo": "3",
       "url": "../images/PS5.png"
     },
     {
       "category": "Sneaker",
       "name": "AirJordan1",
       "description": "EU 42.5",
+      "itemNo": "4",
       "url": "../images/AirJordan1.png"
     },
     {
       "category": "Sneaker",
       "name": "AirJordan4",
       "description": "EU 42",
+      "itemNo": "5",
       "url": "../images/AirJordan4.png"
     },
     {
       "category": "Sneaker",
       "name": "AirMax97",
       "description": "EU 43",
+      "itemNo": "6",
       "url": "../images/AirMax97.png"
     },
     {
       "category": "Supreme",
       "name": "Supreme",
       "description": "Supreme x Louis Vutton",
+      "itemNo": "7",
       "url": "../images/supreme.jpg"
     },
     {
       "category": "Luxury",
       "name": "VERSACE",
       "description": "Black & Gold Boxing Gloves",
+      "itemNo": "8",
       "url": "../images/versace.jpg"
     }
   ]
