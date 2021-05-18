@@ -1,54 +1,52 @@
 {
   "sneakers": [
     {
-      "title": "Yeezy",
+      "category": "Sneaker",
+      "name": "Yeezy",
       "description": "EU 43",
       "url": "../images/Yeezy.png"
     },
     {
-      "title": "AirForce1",
+      "category": "Sneaker",
+      "name": "AirForce1",
       "description": "EU 44",
       "url": "../images/AirForce1.png"
     },
     {
-      "title": "PS5",
+      "category": "Luxury",
+      "name": "PS5",
       "description": "USA version",
       "url": "../images/PS5.png"
     },
     {
-      "title": "AirJordan1",
+      "category": "Sneaker",
+      "name": "AirJordan1",
       "description": "EU 42.5",
       "url": "../images/AirJordan1.png"
     },
     {
-      "title": "AirJordan4",
+      "category": "Sneaker",
+      "name": "AirJordan4",
       "description": "EU 42",
       "url": "../images/AirJordan4.png"
     },
     {
-      "title": "AirMax97",
+      "category": "Sneaker",
+      "name": "AirMax97",
       "description": "EU 43",
       "url": "../images/AirMax97.png"
     },
     {
-      "title": "AJ1",
-      "description": "No Image",
-      "url": "../images/PlaceHolder.png"
+      "category": "Supreme",
+      "name": "Supreme",
+      "description": "Supreme x Louis Vutton",
+      "url": "../images/supreme.jpg"
     },
     {
-      "title": "AJ2",
-      "description": "No Image",
-      "url": "../images/PlaceHolder.png"
-    },
-    {
-      "title": "AJ3",
-      "description": "No Image",
-      "url": "../images/PlaceHolder.png"
-    },
-    {
-      "title": "AJ4",
-      "description": "No Image",
-      "url": "../images/PlaceHolder.png"
+      "category": "Luxury",
+      "name": "VERSACE",
+      "description": "Black & Gold Boxing Gloves",
+      "url": "../images/versace.jpg"
     }
   ]
 }

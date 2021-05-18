@@ -15,10 +15,14 @@ function App() {
   const [currentTab, setCurrentTab] = useState({ current: 'All' });
   const onTabClick = e => {
     setCurrentTab({ current: e.key });
-    alert("Current menu tab state is: " + e.key);
   };
 
-  const onSearch = value => alert(value);
+  //search key
+  const [currentSearch, setCurrentSearch] = useState("");
+  const onSearch = value => {
+    setCurrentSearch(value);
+    console.log("current value is: " + value);
+  };
 
   return (
     <div className="App">
@@ -34,11 +38,11 @@ function App() {
         <Content>
 
           <Space direction="horizontal">
-            <Search placeholder="Find a model" allowClear onSearch={onSearch} />
-            <Search placeholder="Find a size" allowClear onSearch={onSearch} />
+            <Search size="large" placeholder="Find a product" allowClear onSearch={onSearch} onInput={e => onSearch(e.target.value)} />
+            <Search size="large" placeholder="Find a size" allowClear onSearch={onSearch} onInput={e => onSearch(e.target.value)} />
           </Space>
 
-          <ProductGrid database={database}></ProductGrid>
+          <ProductGrid database={database} selectedKeys={currentTab.current} currentSearch={currentSearch}></ProductGrid>
 
         </Content>
         <Footer>L'inconnue © 2021</Footer>
