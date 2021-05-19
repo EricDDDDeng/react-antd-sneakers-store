@@ -37,10 +37,10 @@ function App() {
       <Layout>
         <Header style={{ width: '100%' }}>
           <div className="logo" style={{ backgroundImage: "url(./images/logo.png)", backgroundSize: "contain", backgroundRepeat: "no-repeat" }} />
-          <Menu selectedKeys={currentTab.current} onClick={onTabClick} mode="horizontal" theme="dark" style={{ overflow: "auto" }}>
+          <Menu selectedKeys={currentTab.current} onClick={onTabClick} mode="horizontal" theme="dark" style={{ overflow: "auto", fontFamily: "Abril Fatface", fontSize: "18px" }}>
             <Menu.Item key='All' >All</Menu.Item>
             <Menu.Item key='Supreme'>Supreme</Menu.Item>
-            <Menu.Item key='Sneaker'>Sneaker</Menu.Item>
+            <Menu.Item key='Sneaker'>Sneakers</Menu.Item>
             <Menu.Item key='Luxury'>Luxury</Menu.Item>
           </Menu>
         </Header>
@@ -63,11 +63,10 @@ function App() {
           <ProductGrid database={database} currentTab={currentTab.current} searchKeyword={searchKeyword} searchType={searchType}></ProductGrid>
           <Divider />
           <FAQ></FAQ>
-          <Divider />
           <Subscribe></Subscribe>
 
         </Content>
-        <Footer>L'inconnue © 2021</Footer>
+        <Footer style={{ backgroundColor: "#001529", color: "#a6adb4" }}>L'inconnue © 2021</Footer>
       </Layout>
     </div>
   );
