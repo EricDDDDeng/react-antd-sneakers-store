@@ -55,6 +55,13 @@
       "description": "Black & Gold Boxing Gloves",
       "itemNo": "8",
       "url": "../images/versace.jpg"
+    },
+    {
+      "category": "Luxury",
+      "name": "Another VERSACE",
+      "description": "Black & Gold Boxing Gloves",
+      "itemNo": "9",
+      "url": "../images/versace.jpg"
     }
   ]
 }
