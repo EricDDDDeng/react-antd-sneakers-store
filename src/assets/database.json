@@ -2,66 +2,59 @@
   "sneakers": [
     {
       "category": "Sneaker",
-      "name": "Yeezy",
-      "description": "EU 43",
+      "name": "Jordan 1 Mid University Gold",
+      "description": "EU 41",
       "itemNo": "1",
-      "url": "../images/Yeezy.png"
+      "url": "../images/202106141351447.jpg"
     },
     {
-      "category": "Sneaker",
-      "name": "AirForce1",
-      "description": "EU 44",
+      "category": "Luxury",
+      "name": "POCHETTE FÉLICIE",
+      "description": "M61276",
       "itemNo": "2",
-      "url": "../images/AirForce1.png"
+      "url": "../images/20210614135144.jpg"
     },
     {
       "category": "Luxury",
-      "name": "PS5",
-      "description": "USA version",
+      "name": "POCHETTE ACCESSOIRES MINI",
+      "description": "M58009",
       "itemNo": "3",
-      "url": "../images/PS5.png"
-    },
-    {
-      "category": "Sneaker",
-      "name": "AirJordan1",
-      "description": "EU 42.5",
-      "itemNo": "4",
-      "url": "../images/AirJordan1.png"
-    },
-    {
-      "category": "Sneaker",
-      "name": "AirJordan4",
-      "description": "EU 42",
-      "itemNo": "5",
-      "url": "../images/AirJordan4.png"
-    },
-    {
-      "category": "Sneaker",
-      "name": "AirMax97",
-      "description": "EU 43",
-      "itemNo": "6",
-      "url": "../images/AirMax97.png"
-    },
-    {
-      "category": "Supreme",
-      "name": "Supreme",
-      "description": "Supreme x Louis Vutton",
-      "itemNo": "7",
-      "url": "../images/supreme.jpg"
+      "url": "../images/202106141351442.jpg"
     },
     {
       "category": "Luxury",
-      "name": "VERSACE",
-      "description": "Black & Gold Boxing Gloves",
-      "itemNo": "8",
-      "url": "../images/versace.jpg"
+      "name": "POCHETTE ACCESSOIRES NM",
+      "description": "M40712",
+      "itemNo": "4",
+      "url": "../images/202106141351443.jpg"
     },
     {
-      "category": "Supreme",
-      "name": "YEEZY 350 V2 SAND",
-      "description": "又大又圆",
-      "itemNo": "FZ5350",
-      "url": "../images/PANZI.jpg"
+      "category": "Luxury",
+      "name": "SAC NANO NOÉ",
+      "description": "M41346",
+      "itemNo": "5",
+      "url": "../images/202106141351444.jpg"
+    },
+    {
+      "category": "Luxury",
+      "name": "PETIT SAC PLAT",
+      "description": "M69442",
+      "itemNo": "6",
+      "url": "../images/202106141351445.jpg"
+    },
+    {
+      "category": "Luxury",
+      "name": "SAC NANO SPEEDY",
+      "description": "M61252",
+      "itemNo": "7",
+      "url": "../images/202106141351446.jpg"
+    },
+    {
+      "category": "Luxury",
+      "name": "Poche Toilette 26 Monogram ",
+      "description": "M47542",
+      "itemNo": "8",
+      "url": "../images/202106141351441.jpg"
     }
   ]
 }
